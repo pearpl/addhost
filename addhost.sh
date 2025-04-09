@@ -2,7 +2,7 @@
 # addhost.sh - Simple hosts file manager for macOS
 # Author: Łukasz 'Alien' Kosma
 # Homepage: https://pear.pl
-# GitHub: https://github.com/pearpl/
+# GitHub: https://github.com/pearpl
 # Version: 1.0
 # License: MIT
 #
@@ -28,6 +28,7 @@
 #   addhost rm <hostname>     # Remove a hostname
 #   addhost list              # List all hostnames
 #   addhost help              # Show help
+#   addhost ver         # Show version
 #
 
 #!/bin/bash
@@ -70,6 +71,10 @@ case "$COMMAND" in
 		echo -e "${GREEN}Existing hostnames mapped to $IP:${NC}"
 		list_hosts
 		;;
+	ver)
+		echo "addhost.sh version 1.0"
+		exit 0
+		;;
 	help|*)
 		echo ""
 		echo -e "  ${GREEN}Usage:${NC}"
@@ -78,6 +83,7 @@ case "$COMMAND" in
 		echo -e "  ${GREEN}addhost rm <hostname>${NC}     Remove a hostname"
 		echo -e "  ${GREEN}addhost list${NC}              List all hostnames"
 		echo -e "  ${GREEN}addhost help${NC}              Show this help message"
+		echo -e "  ${GREEN}addhost ver${NC}         Show version"
 		echo ""
 
 		;;

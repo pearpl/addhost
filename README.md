@@ -1,7 +1,3 @@
-# addhost.sh
-
-Simple command-line script for managing entries in `/etc/hosts` on macOS.
-
 ## Features
 
 - Add hostnames to 127.0.0.1
@@ -47,6 +43,7 @@ addhost add <hostname>      # Add a hostname to 127.0.0.1
 addhost rm <hostname>       # Remove a hostname
 addhost list                # List all hostnames
 addhost help                # Show usage info
+addhost ver                 # Show version
 ```
 
 ## Example
