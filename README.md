@@ -1,3 +1,7 @@
+# addhost.sh
+
+Simple command-line script for managing entries in `/etc/hosts` on macOS.
+
 ## Features
 
 - Add hostnames to 127.0.0.1
